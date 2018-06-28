@@ -1,0 +1,62 @@
+\documentclass[12pt, a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage[T2A]{fontenc}
+%for additional symbols
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+
+% for indent first paragraph within section
+\usepackage{indentfirst}
+
+%for text boundaries
+\usepackage[a4paper, left=15mm, right=15mm, top=15mm, bottom=15mm]{geometry}
+
+%for some mathematical things
+\usepackage{amsmath}
+
+%for pictures
+\usepackage{graphicx}
+\usepackage{alltt}
+
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
+
+\definecolor{mygray}{rgb}{0.4,0.4,0.4}
+\definecolor{mygreen}{rgb}{0.0,0.16,0.67}
+\definecolor{myorange}{rgb}{1.0,0.25,0}
+\definecolor{myblue}{rgb}{0.17,0.27,0.53}
+
+\lstset{
+basicstyle=\footnotesize\sffamily\color{black},
+commentstyle=\color{mygray},
+frame=single,
+numbers=left,
+numbersep=5pt,
+numberstyle=\tiny\color{myblue},
+keywordstyle=\color{mygreen},
+showspaces=false,
+showstringspaces=false,
+stringstyle=\color{myorange},
+tabsize=3,
+extendedchars=\true,
+inputencoding=utf8,
+breaklines=true
+}
+
+
+
+\graphicspath{{./Screenshots/}}
+
+
+\begin{document}
+	\input{templates}
+	\input{part1}
+	\input{part2}
+	\input{application}
+	\input{end}
+\end{document}
